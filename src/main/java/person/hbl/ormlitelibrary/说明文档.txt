@@ -1,0 +1,23 @@
+v.1.0.0
+1.官网地址:http://ormlite.com/releases/
+2.app core 需要继承BaseDatabaseHelper
+3.数据库升级方案：
+    3.1.将现有表以别名命名
+    3.2.创建新表
+    3.3.迁移数据
+        3.4.1 新增表
+        3.4.2 删除表
+        3.4.3 新增和删除字段
+    3.4.删除现有表
+
+// 测试内容
+1. 创建表是否成功  -- test ok
+2. DaoUtils是否有效 -- test ok
+3. 升级数据库 -- 简单测试完成，完整测试完成
+
+v.1.0.1
+1.新增 ormlite-android-ormlite-android-5.0 源码 --> 改造（新增数据加密）集成sqlcipher
+2.sqlcipher地址：https://www.zetetic.net/sqlcipher/sqlcipher-for-android/
+3.操作数据库前，必须SQLiteDatabase.loadLibs(this);
+
+注意：当前是用aar的方式引入ormlitesqlcipher
